@@ -1,4 +1,4 @@
-#APT-CLI FOR TERMUX ANDROID
+# APT-CLI FOR TERMUX ANDROID
 
 ```
    _   ___ _____     ___ _    ___
@@ -7,7 +7,7 @@
 /_/ \_\_|   |_|     \___|____|___|
 ```
 
-##APT CLI THAT CAN MAKE YOUR APT USE EASY!!
+## APT CLI THAT CAN MAKE YOUR APT USE EASY!!
 Tired of Typing APT install? well this is the script for you
 
 ##Installing one is also easy

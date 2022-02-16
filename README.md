@@ -10,7 +10,7 @@
 ## APT CLI THAT CAN MAKE YOUR APT USE EASY!!
 Tired of Typing APT install? well this is the script for you
 
-##Installing one is also easy
+## Installing one is also easy
 
 Follow the Instructions:
 

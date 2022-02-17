@@ -2,12 +2,12 @@
 
 
 #GLOBAL VARIABLES
-BKTITLE="APT-CLI by SUFandom (Dialog Version) 0.1-beta"
+BKTITLE="APT-CLI by SUFandom (Dialog Version) 0.2-beta"
 TITLE_HEADING="APT-CLI MENU"
 TIME=$SECONDS
 TITLE_STARTUP="APT-CLI"
 TITLE_HEADING_B="APT-CLI ABOUT"
-REL="0.1-beta"
+REL="0.2-beta"
 
 #ERROR Variable, ASSETS RELATED
 ROOT_DETECTED="uw-r#0"
@@ -99,11 +99,11 @@ case $selection in
        clear ;
        dialog --backtitle "$BKTITLE" --title "APT-CLI HELP" --infobox "Loading Help" $HEIGHT $WIDTH ;
        sleep 5 ;
-       command .apt-cli-help.sh
+       command ./apt-cli-help.sh
        ;;
      5) 
        clear ;
-       dialog --infobox "$BKTITLE"  --title "APT OPTIONS (LIMITED)" ;
+       dialog --infobox "$BKTITLE"  --title "APT OPTIONS (LIMITED)" $HEIGHT $WIDTH ;
        sleep 5 ;
        command ./apt-options.sh
        ;;

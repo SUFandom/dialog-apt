@@ -2,8 +2,8 @@
 
 #GLOBAL VARIABLE
 TITLE="APT-CLI ABOUT PAGE"
-REL="0.1-beta"
-BKT="APT-CLI by SUFandom (Dialog Version)"
+REL="0.2-beta"
+BKT="APT-CLI by SUFandom (Dialog Version) $REL"
 
 
 
@@ -22,7 +22,7 @@ WIDTH=0
 : ${DIALOG_ITEM_HELP=4}
 : ${DIALOG_ESC=255}
 
-if ( test -e about.txt )
+if ( find about.txt )
 then 
      dialog --backtitle "$BKT" --title "$TITLE" --infobox "Loading Help Page" $HEIGHT $WIDTH
      sleep 10

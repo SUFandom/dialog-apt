@@ -2,12 +2,12 @@
 
 
 #GLOBAL VARIABLES
-BKTITLE="APT-CLI by SUFandom (Dialog Version) 0.1-beta"
+BKTITLE="APT-CLI by SUFandom (Dialog Version) 0.2-beta"
 TITLE_HEADING="APT-CLI INSTALL"
 TIME=$SECONDS
 TITLE_STARTUP="APT-CLI"
 TITLE_HEADING_B="APT-CLI ABOUT"
-REL="0.1-beta"
+REL="0.2-beta"
 
 #Height and Width for Dialog
 HEIGHT=0
@@ -44,7 +44,7 @@ return_value=$?
 exec 3>&-
 case $return_value in 
      $DIALOG_OK)
-    { apt-get install $inputins -y  ; } | dialog --backtitle "$BKTITLE" --title "$TITLE_HEADING" --programbox 30 50 2>&1 1>&3
+     { apt-get install $inputins -y  ; } | dialog --backtitle "$BKTITLE" --title "$TITLE_HEADING" --programbox 30 50 ;
     command ./apt-install.sh
      ;;
      $DIALOG_CANCEL)
@@ -52,6 +52,7 @@ case $return_value in
      ;;
      $DIALOG_HELP)
      dialog --backtitle "$BKTITLE" --infobox "Loading Help" $HEIGHT $WIDTH ;
-     sleep 5
+     sleep 5 ;
+     command ./apt-cli-help.sh
      ;;
 esac

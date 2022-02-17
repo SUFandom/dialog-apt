@@ -1,8 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash 
 
 #Global Params
-BKT="APT-CLI by SUFandom (Dialog Version) 0.1-beta"
-REL="0.1-beta"
+BKT="APT-CLI by SUFandom (Dialog Version) $REL"
+REL="0.2-beta"
 TITLE="Remove Packages"
 
 #GLOBAL DIALOG Size
@@ -23,10 +23,10 @@ exec 3>&1
 dialog --backtitle "$BKT" --title "$TITLE" --yes-label "<∆> REMOVE PACKAGES" --no-label "Abort" --yesno "REMOVING UNIMPORTANT ASSETS, DO YOU WISH TO PROCEED? ANY ACTIONS ARE IRREVISIBLE. (REFER TO HELP FOR MORE INFO)" $HEIGHT $WIDTH 
 #Exit Sniffers
 exitstatus=$?
+exec 3>&-
 case $exitstatus in 
       $DIALOG_OK)
-                 { apt-get autoremove -y ; } | dialog --backtitle "$BKT" --title "$TITLE" --programbox 30 50 ;
-                 command ./apt-options.sh
+                 command ./uninstall-aptcli.sh 
                  ;;
       $DIALOG_CANCEL) 
                  command ./apt-options.sh 

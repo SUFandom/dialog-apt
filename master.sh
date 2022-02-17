@@ -1,8 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 #GLOBAL PARAMS
-BKT="APT-CLI By SUFandom (Dialog Version) 0.1-beta"
-REL="0.1-beta"
+BKT="APT-CLI By SUFandom (Dialog Version) $REL"
+REL="0.2-beta"
 TITLE="MASTER MODE"
 WARNING="THIS AREA IS PROHIBITED TO BE USED BY INEXPERIENCE. GO AS YOU RISK"
 BKT_N="WARNING"

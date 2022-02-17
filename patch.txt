@@ -1,10 +1,56 @@
- ___  _ _____ ___ _  _   _  _  ___ _____ ___ ___
-| _ \/_\_   _/ __| || | | \| |/ _ \_   _| __/ __|
-|  _/ _ \| || (__| __ | | .` | (_) || | | _|\__ \
-|_|/_/ \_\_| \___|_||_| |_|\_|\___/ |_| |___|___/
 
-PATCH NOTES!!!
+██████╗░░█████╗░████████╗░█████╗░██╗░░██╗
+██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██║░░██║
+██████╔╝███████║░░░██║░░░██║░░╚═╝███████║
+██╔═══╝░██╔══██║░░░██║░░░██║░░██╗██╔══██║
+██║░░░░░██║░░██║░░░██║░░░╚█████╔╝██║░░██║
+╚═╝░░░░░╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝
 
-0.1-BETA
+███╗░░██╗░█████╗░████████╗███████╗░██████╗
+████╗░██║██╔══██╗╚══██╔══╝██╔════╝██╔════╝
+██╔██╗██║██║░░██║░░░██║░░░█████╗░░╚█████╗░
+██║╚████║██║░░██║░░░██║░░░██╔══╝░░░╚═══██╗
+██║░╚███║╚█████╔╝░░░██║░░░███████╗██████╔╝
+╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░╚══════╝╚═════╝░
+
+
+=========================================
+COOL!!!
+=========================================
+PATCH NOTES!!! (PATCH FIXES WILL BE NEWEST TO OLDEST)
+
+0.2-BETA -FEBUARY 17 2022
+
+FIX EXIT BUTTON FROM THE MENU!
+
+FIX "BAD FILE DESCRIPTOR" ON INSTALL
+NOW YOU CAN INSTALL STUFF!
+
+ADDED APTSEARCHLOG'.TXT' SO DIALOG CAN
+RECOGNIZE THE TEMPORARY FILE EASILY
+
+FIXED UNEXPECTED ERROR BROADCAST FROM DIALOG
+WHEN GOING TO OPTIONS!
+
+SOMEHOW FIXED THE PATCH AREA WHERE ONE TINY TOUCH
+MAKES THE PATCH AREA GO BYE BYE.
+
+ADDED COOL ASCII ART IN THIS PATCH NOTES..
+REMOVED THE FIGLET BASED TEXT
+
+FIXED MASTER AREA NOT EXECUTING YOUR DESIRED COMMAND
+
+FIXED UPDATE CACHE AREA NOT UPDATING AND LET YOU EXIT
+UNEXPECTEDLY
+
+FIXED REMOVE PACKAGES, YOU CAN UNINSTALL STUFF NOW!
+
+FIXED USELESS PACKAGES AREA
+
+ADVICE: IF YOURE STUCK ON MAIN MENU, DONT AFRAID TO ESC.
+
+==============================
+
+0.1-BETA - FEBUARY 16 2022
 INITIAL RELEASE
-
+FIRST BETA 

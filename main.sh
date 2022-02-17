@@ -2,7 +2,7 @@
 
 
 #GLOBAL VARIABLES
-BKTITLE="APT-CLI by SUFandom (Dialog Version) 0.1-beta"
+BKTITLE="APT-CLI by SUFandom (Dialog Version) 0.2-beta"
 TITLE_HEADING="APT-CLI MENU"
 TIME=$SECONDS
 TITLE_STARTUP="APT-CLI"

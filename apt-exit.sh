@@ -9,4 +9,5 @@ sleep 1
 echo "Ending Process..."
 sleep 10
 echo "[Process Ended $PID - Error $?]"
+exit 0
 #End.

@@ -15,19 +15,19 @@ MISSING_FILE="mis-187/inf=0"
 
 #Global Vars
 TITLE="APT-CLI HELP PAGE"
-REL="0.1-beta"
+REL="0.2-beta"
 BKT="APT-CLI by SUFandom (Dialog Version)"
 
 
 #Inputboxes
 
-if ( test -e help.txt )
+if ( find help.txt )
 then 
      dialog --backtitle "$BKT" --title "$TITLE" --infobox "Loading Help Page" $HEIGHT $WIDTH
-     sleep 10
+     sleep 5
 else
      dialog --backtitle "$BKT" --title "ERROR" --infobox "Help File Missing, Screenshot the Error to Report on Github: ERROR: $MISSING_FILE" $HEIGHT $WIDTH
-     sleep 10
+     sleep 5
      command ./apt-menu.sh
 fi
 exec 3>&1

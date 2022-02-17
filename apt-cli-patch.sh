@@ -13,9 +13,14 @@ WIDTH=0
 
 #Global Vars
 TITLE="APT-CLI PATCH INFO"
-REL="0.1-beta"
+REL="0.2-beta"
 BKT="APT-CLI by SUFandom (Dialog Version)"
 
-dialog --backtitle "$BKT" --title "$TITLE" --textbox patch.txt 30 65
+
+dialog --infobox "Loading Patch Lists" $HEIGHT $WIDTH 
+sleep 2
+
+
+dialog --backtitle "$BKT" --nomouse --title "$TITLE" --textbox patch.txt 30 65
 
 command ./apt-menu.sh

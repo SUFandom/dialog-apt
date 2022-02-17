@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 #GLOBAL VARIABLES
-BKTITLE="APT-CLI by SUFandom (Dialog Version) 0.1-beta"
+BKTITLE="APT-CLI by SUFandom (Dialog Version) 0.2-beta"
 TITLE_HEADING="APT-CLI MENU"
 TIME=$SECONDS
 TITLE_SEARCH="APT SEARCH"
@@ -61,11 +61,11 @@ exec 3>-
 #Act on run
  case $return_value in
      $DIALOG_OK)
-         command apt search $result > aptsearchlog ;
+         command apt search $result > aptsearchlog.txt ;
          dialog --backtitle "$BKTITLE" --title "$TITLE_STARTUP" --infobox "Did you know, after you typed your results, you can use up, down, left, and right key on Termux to see the full description." $HEIGHT $WIDTH ;
          sleep 8 ;
-         dialog --backtitle "$BKTITLE" --title "$TITLE_STARTUP" --textbox aptsearchlog  20 50 ;
-         rm -rf aptsearchlog ;
+         dialog --backtitle "$BKTITLE" --title "$TITLE_STARTUP" --textbox aptsearchlog.txt  20 50 ;
+         rm -rf aptsearchlog.txt ;
          command ./apt-search.sh ;;
      $DIALOG_CANCEL)
          dialog --backtitle "$BKTITLE" --title "$TITLE_STARTUP" --infobox "Wait" $HEIGHT $WIDTH  ;

@@ -1,8 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/env sh
 
 #Global Params
-BKT="APT-CLI by SUFandom (Dialog Version) 0.1-beta"
-REL="0.1-beta"
+BKT="APT-CLI by SUFandom (Dialog Version) 0.2-beta"
+REL="0.2-beta"
 TITLE="MASTER MODE"
 
 #Global Dialog Size
@@ -43,7 +43,7 @@ grab_exit=$?
 exec 3>&-
 case $grab_exit in 
      $DIALOG_OK)
-     command $input1 $input2 $input3 | dialog --backtitle "$BKT" --title "$TITLE" --programbox 30 50 2>&1 1>&3 ;
+     command $input1 $input2 $input3 | dialog --backtitle "$BKT" --title "$TITLE" --programbox 30 50  ;
         command ./master-input.sh
         ;;
      $DIALOG_CANCEL)

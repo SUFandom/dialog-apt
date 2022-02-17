@@ -1,8 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/env sh
 
 #Global Params
-BKT="APT-CLI by SUFandom (Dialog Version) 0.1-beta"
-REL="0.1-beta"
+BKT="APT-CLI by SUFandom (Dialog Version) 0.2-beta"
+REL="0.2-beta"
 TITLE="Cache Update"
 
 #Global Dialog Size
@@ -25,8 +25,8 @@ exec 3>&-
 
 case $exit_status in
       $DIALOG_OK)
-             echo "Sleeping dialog.."
-             sleep 3
+             echo "Sleeping dialog.." ;
+             sleep 3 ;
              apt-get update && apt-get upgrade -y ;
              dialog --backtitle "$BKT" --title "$TITLE" --infobox  "Update Complete" $HEIGHT $WIDTH ;
              sleep 5 ;

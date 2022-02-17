@@ -2,9 +2,9 @@
 
 
 #GLOBAL VARIABLES
-BKT="APT-CLI by SUFandom (Dialog Version) 0.1-beta"
+BKT="APT-CLI by SUFandom (Dialog Version) 0.2-beta"
 TITLE="OPTIONS"
-REL="0.1-beta"
+REL="0.2-beta"
 MISSING_FILE_1="mis-187/opt-mastr=0"
 MISSING_FILE_2="mis-187/opt-updt-apt=0"
 MISSING_FILE_3="mis-187/opt-uninx-pk=0"
@@ -67,7 +67,8 @@ case $pick in
         clear ;
         dialog --backtitle "$BKT" --infobox "LOADING" $HEIGHT $WIDTH ;
         sleep 3 ;
-        command ./
+        command ./autorem-apt.sh
+        ;;
 esac
 
 

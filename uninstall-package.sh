@@ -2,7 +2,7 @@
 
 #Global Params
 BKT="APT-CLI by SUFandom (Dialog Version) $REL"
-REL="0.2-beta"
+REL="0.3-beta (Zimwalt)"
 TITLE="Remove Packages"
 
 #GLOBAL DIALOG Size

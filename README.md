@@ -1,44 +1,36 @@
 # APT-CLI FOR TERMUX ANDROID
 
 ```
-   _   ___ _____     ___ _    ___
-  /_\ | _ \_   _|__ / __| |  |_ _|
- / _ \|  _/ | ||___| (__| |__ | |
-/_/ \_\_|   |_|     \___|____|___|
+ ______  ____    ______          ____     __     ______     
+/\  _  \/\  _`\ /\__  _\        /\  _`\  /\ \   /\__  _\    
+\ \ \L\ \ \ \L\ \/_/\ \/        \ \ \/\_\\ \ \  \/_/\ \/    
+ \ \  __ \ \ ,__/  \ \ \  _______\ \ \/_/_\ \ \  __\ \ \    
+  \ \ \/\ \ \ \/    \ \ \/\______\\ \ \L\ \\ \ \L\ \\_\ \__ 
+   \ \_\ \_\ \_\     \ \_\/______/ \ \____/ \ \____//\_____\
+    \/_/\/_/\/_/      \/_/          \/___/   \/___/ \/_____/
 ```
+
+Cool Font.
+
 
 ## APT CLI THAT CAN MAKE YOUR APT USE EASY!!
 Tired of Typing APT install? well this is the script for you
 
-## NEW THINGS ON 0.2-beta!!
+## NEW THINGS ON 0.3-beta - (Zimwalt)!!
 
-> FIX EXIT BUTTON FROM THE MENU!
+> FIXED ABOUT PAGE NOT APPEARING!!
 
-> FIX "BAD FILE DESCRIPTOR" ON INSTALL
-NOW YOU CAN INSTALL STUFF!
+> CHANGED ART TEXT TO FIGLET BACK. (PATCH NOTE UPDATE)
 
-> ADDED APTSEARCHLOG'.TXT' SO DIALOG CAN
-RECOGNIZE THE TEMPORARY FILE EASILY
+> REMOVED LOOP AREA AT apt-menu.sh DUE TO MAYBE SOME 
+POSSIBILITY THAT THE ERROR MAY HAVE CAUSED IT 
 
-> FIXED UNEXPECTED ERROR BROADCAST FROM DIALOG
-WHEN GOING TO OPTIONS!
+> FIXED GOING OPTIONS SHOW ERRORS FROM DIALOG ITSELF
 
-> SOMEHOW FIXED THE PATCH AREA WHERE ONE TINY TOUCH
-MAKES THE PATCH AREA GO BYE BYE.
+> REMOVED APT-EXIT.SH BECAUSE ITS THE SOURCE OF THE 
+LOOPING EXIT ISSUE
 
-> ADDED COOL ASCII ART IN THIS PATCH NOTES..
-REMOVED THE FIGLET BASED TEXT
-
-> FIXED MASTER AREA NOT EXECUTING YOUR DESIRED COMMAND
-
-> FIXED UPDATE CACHE AREA NOT UPDATING AND LET YOU EXIT
-UNEXPECTEDLY
-
-> FIXED REMOVE PACKAGES, YOU CAN UNINSTALL STUFF NOW!
-
-> FIXED USELESS PACKAGES AREA
-
-> ADVICE: IF YOURE STUCK ON MAIN MENU, DONT AFRAID TO ESC.
+Check the Releases for Revisions or Commits (Or git clone then read the patch there)
 
 
 ## Installing one is also easy
@@ -54,10 +46,12 @@ apt update && apt upgrade -y && apt install git -y && git clone http://github.co
 then run:
 
 ```
-chmod +x apt-cli-about.sh ; chmod +x apt-cli-help.sh ; chmod +x apt-cli-patch.sh ; chmod +x apt-exit.sh ; chmod +x apt-install.sh ; chmod +x apt-menu.sh ; chmod +x apt-options.sh ; chmod +x main.sh ; chmod +x apt-search.sh ; chmod +x master-input.sh ; chmod +x master.sh ; chmod +x uninstall-package.sh ; chmod +x uninstall-sh.sh ; chmod +x update-cache.sh ; chmod +x autorem-apt.sh ; chmod +x uninstall-aptcli.sh
+chmod +x apt-cli-about.sh ; chmod +x apt-cli-help.sh ; chmod +x apt-cli-patch.sh ; chmod +x apt-install.sh ; chmod +x apt-menu.sh ; chmod +x apt-options.sh ; chmod +x main.sh ; chmod +x apt-search.sh ; chmod +x master-input.sh ; chmod +x master.sh ; chmod +x uninstall-package.sh ; chmod +x uninstall-sh.sh ; chmod +x update-cache.sh ; chmod +x autorem-apt.sh ; chmod +x uninstall-aptcli.sh
 ```
 
 BUT MAKE SURE YOU'RE AT THE REPO'S LOCATION OR IT WILL NOT WORK!!
+
+(Im working on an installer to make this easier. May appear Later in versions later)
 
 
 Any problems should be reported as fast as possile to fix the code

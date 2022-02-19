@@ -2,13 +2,14 @@
 
 
 #GLOBAL VARIABLES
-BKTITLE="APT-CLI by SUFandom (Dialog Version) 0.2-beta"
+BKTITLE="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE_HEADING="APT-CLI MENU"
 TIME=$SECONDS
 TITLE_STARTUP="APT-CLI"
 TITLE_HEADING_B="APT-CLI ABOUT"
-VS_BASH=bash -c 'echo $BASH_VERSION'
-VS_ZSH=zsh --version
+VS_BASH=command bash -c 'echo $BASH_VERSION'
+VS_ZSH=command zsh --version
+REL="0.3-beta(zimwalt)"
 
 
 #Height-Width Default Variable (GLOBAL VARIABLES)
@@ -41,14 +42,14 @@ display_result () {
 #Script Startup
 clear 
 for ((i=0; i<=5; i++)); do echo "Version of Bash: BASH_VERSINFO[$i] = ${BASH_VERSINFO[$i]}"; done
-sleep 5
+sleep 3
 clear
 echo "Warning, there will be some flickering  " 
 echo "This is just Dialog Engine having seizures  " 
 echo "Due to the 'for' function. sorry" 
-sleep 5
+sleep 3
 
-for i in $(seq 12 100) ; do sleep 0.5 ; echo $i | dialog --backtitle "$BKTITLE" --gauge "Loading, Please Wait" 10 50 0 ; done
+for i in $(seq 0 12 100) ; do sleep 0.5 ; echo $i | dialog --backtitle "$BKTITLE" --gauge "Loading, Please Wait" 10 50 0 ; done
 
 #Scanning if you set Termux to Root
 #By checking if it can read /data because only SuperUser Privilege to check it.
@@ -61,8 +62,8 @@ then dialog  --backtitle "$BKTITLE"   --infobox "You are in Super User, $USER, D
      dialog --backtitle "$BKTITLE" --infobox "Remove Root Privileges, executing Exit code $?" 13 40
      sleep 5
      exit
-else echo "Proceeding, your device is root free, thank you..."
-     sleep 5
+else echo "Device in NoRoot, Proceeding..."
+     sleep 3
 fi
 
 
@@ -116,7 +117,7 @@ echo "hibernating 'seconds' temporarily......"
 sleep 3
 clear
 printf '%s\n' "Warning, There will be a Prompt by asking you to Enter your Terminal Environment, you can choose Option 3 if you Dont Know." | fold -s
-sleep 10
+sleep 5
 exec 3>&1 
 console=$( dialog \
              --backtitle "Identify your CL" \
@@ -142,19 +143,19 @@ case $console in
       clear ;
       printf "Bash Version is $VS_BASH" > .shconfig ;
       dialog --infobox "bash: $VS_BASH" $HEIGHT $WIDTH ;
-      sleep 5
+      sleep 3
       ;;
      2)
       clear ;
       printf "ZSH or OMZ version is: $VS_ZSH" > .shconfig ;
       dialog --infobox "Zsh: $VS_ZSH" $HEIGHT $WIDTH ;
-      sleep 5 
+      sleep 3
       ;;
      3) 
       clear ;
       printf "auto" > .shconfig
       dialog --infobox "Unspecified, AUTO MODE" $HEIGHT $WIDTH ;
-      sleep 5
+      sleep 3
       ;;
 esac
 clear

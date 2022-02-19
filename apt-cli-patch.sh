@@ -13,8 +13,8 @@ WIDTH=0
 
 #Global Vars
 TITLE="APT-CLI PATCH INFO"
-REL="0.2-beta"
-BKT="APT-CLI by SUFandom (Dialog Version)"
+REL="0.3-beta (Zimwalt)"
+BKT="APT-CLI by SUFandom (Dialog Version) $REL"
 
 
 dialog --infobox "Loading Patch Lists" $HEIGHT $WIDTH 

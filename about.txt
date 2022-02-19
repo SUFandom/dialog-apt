@@ -6,8 +6,9 @@ ALL RIGHTS RESERVED UNDER GPL 3.0
  / _ \|  _/ | ||___| (__| |__ | |
 /_/ \_\_|   |_|     \___|____|___|
               APT-CLI 
-         VERSION 0.2-BETA
+     VERSION 0.3-BETA (Zimwalt)
           FEBUARY OF 2022
+              ARMEABI
           DIALOG POWERED
    (IT CAN RUN ON MS-DOS PROBABLY)
 

@@ -1,5 +1,5 @@
 APT-CLI Help!
-Version 0.2-beta
+Version 0.3-beta (Zimwalt)
 Public Beta Release Document
 Author - Version Helped : 
        SUFandom -GitHub (Owner) - 0.1 - *

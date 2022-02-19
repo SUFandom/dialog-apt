@@ -1,13 +1,14 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 #GLOBAL VARIABLES
-BKTITLE="APT-CLI by SUFandom (Dialog Version) 0.2-beta"
+BKTITLE="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE_HEADING="APT-CLI MENU"
 TIME=$SECONDS
 TITLE_SEARCH="APT SEARCH"
 TITLE_STARTUP="APT-CLI"
 TITLE_HEADING_B="APT-CLI ABOUT"
 variable=${log}
+REL="0.3-beta (Zimwalt)"
 
 #Height-Width Default Variable (GLOBAL VARIABLES)
 HEIGHT=0

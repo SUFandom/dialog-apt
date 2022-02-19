@@ -1,8 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/env sh
 
 #Global Params
-BKT="APT-CLI by SUFandom (Dialog Version) 0.2-beta"
-REL="0.2-beta"
+BKT="APT-CLI by SUFandom (Dialog Version) $REL"
+REL="0.3-beta (Zimwalt)"
 TITLE="Cache Update"
 
 #Global Dialog Size

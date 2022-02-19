@@ -5,7 +5,7 @@ HEIGHT=0
 WIDTH=0
 
 #GLOBAL
-REL="0.2-beta"
+REL="0.3-beta (Zimwalt)"
 BACKTITLE="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE="CLEARING"
 

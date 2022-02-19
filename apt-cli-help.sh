@@ -15,8 +15,8 @@ MISSING_FILE="mis-187/inf=0"
 
 #Global Vars
 TITLE="APT-CLI HELP PAGE"
-REL="0.2-beta"
-BKT="APT-CLI by SUFandom (Dialog Version)"
+REL="0.3-beta (Zimwalt)"
+BKT="APT-CLI by SUFandom (Dialog Version) $REL"
 
 
 #Inputboxes
@@ -38,5 +38,8 @@ exec 3>&-
 case $return_value in 
     $DIALOG_OK)
               command ./apt-menu.sh 
+              ;;
+     $DIALOG_ESC)
+              command ./apt-menu.sh
               ;;
 esac

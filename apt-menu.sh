@@ -2,12 +2,12 @@
 
 
 #GLOBAL VARIABLES
-BKTITLE="APT-CLI by SUFandom (Dialog Version) 0.2-beta"
+BKTITLE="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE_HEADING="APT-CLI MENU"
 TIME=$SECONDS
 TITLE_STARTUP="APT-CLI"
 TITLE_HEADING_B="APT-CLI ABOUT"
-REL="0.2-beta"
+REL="0-3-beta (Zimwalt)"
 
 #ERROR Variable, ASSETS RELATED
 ROOT_DETECTED="uw-r#0"
@@ -44,7 +44,6 @@ else
 fi
 
 #MENU
-while true; do
   exec 3>&1
   selection=$(dialog \
     --backtitle "$BKTITLE" \
@@ -67,13 +66,16 @@ case $exit_status in
          clear
          dialog --backtitle "$BKTITLE" --title "$TITLE_STARTUP" --infobox "Ending Process $PID with $?.. Together with Session" $HEIGHT $WIDTH
          sleep 5
-         command ./apt-exit.sh
+         kill -9 $PID
+         exit 1
       ;;
      $DIALOG_ESC)
          clear
          dialog --backtitle "$BKTITLE" --title "$TITLE_STARTUP"  --infobox "PRESSED ESC KEY, Proceeding to Stop the process $PID with Error 1" 10 30
-         sleep 5
-         exit 1
+         sleep 5 
+         exit 
+         exit
+         exit
          ;;
 esac
 case $selection in
@@ -93,7 +95,7 @@ case $selection in
        clear ; 
        dialog --backtitle "$BKTITLE" --title "APT-CLI ABOUT" --infobox "Loading About Page." $HEIGHT $WIDTH ;
        sleep 5 ;
-       command ./apt-cli-about 
+       command ./apt-cli-about.sh 
        ;;
      4)
        clear ;
@@ -103,7 +105,7 @@ case $selection in
        ;;
      5) 
        clear ;
-       dialog --infobox "$BKTITLE"  --title "APT OPTIONS (LIMITED)" $HEIGHT $WIDTH ;
+       dialog --infobox "$BKTITLE"  --title "APT OPTIONS (EXPERIMENTAL)" --infobox "Loading Options" $HEIGHT $WIDTH ;
        sleep 5 ;
        command ./apt-options.sh
        ;;
@@ -117,6 +119,7 @@ case $selection in
        clear ;
        command uname -a > uname.txt ;
        fold -w10 uname.txt ;
-       dialog --backtitle "$BKTITLE" --title "Android Info Grabber" --textbox uname.txt $HEIGHT $WIDTH ;;
+       dialog --backtitle "$BKTITLE" --title "Android Info Grabber" --textbox uname.txt $HEIGHT $WIDTH ;
+       command ./apt-menu.sh
+       ;;
 esac
-done

@@ -2,7 +2,7 @@
 
 #GLOBAL VARIABLE
 TITLE="APT-CLI ABOUT PAGE"
-REL="0.2-beta"
+REL="0.3-beta (Zimwalt)"
 BKT="APT-CLI by SUFandom (Dialog Version) $REL"
 
 
@@ -25,7 +25,7 @@ WIDTH=0
 if ( find about.txt )
 then 
      dialog --backtitle "$BKT" --title "$TITLE" --infobox "Loading Help Page" $HEIGHT $WIDTH
-     sleep 10
+     sleep 5
 else
      dialog --backtitle "$BKT" --title "ERROR" --infobox "About File Missing, Screenshot the Error to Report on Github: ERROR: $MISSING_FILE" $HEIGHT $WIDTH
      sleep 10

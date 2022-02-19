@@ -5,7 +5,7 @@ HEIGHT=0
 WIDTH=0
 
 #GLOBAL
-REL="0.2-beta"
+REL="0.3-beta (Zimwalt)"
 BACKTITLE="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE="UNINSTALL"
 
@@ -30,7 +30,7 @@ exec 3>&-
 
 case $exitstatus in
      $DIALOG_OK)
-             { apt-get remove $input ; } | dialog --backtitle "$BACKTITLE" --title "$TITLE" --programbox 30 60 ;
+             { apt-get remove $input -y ; } | dialog --backtitle "$BACKTITLE" --title "$TITLE" --programbox 30 60 ;
              command ./apt-options.sh 
              ;;
      $DIALOG_CANCEL)

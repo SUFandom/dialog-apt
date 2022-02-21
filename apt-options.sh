@@ -2,9 +2,9 @@
 
 
 #GLOBAL VARIABLES
+REL="0.4-beta (Kepler)"
 BKT="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE="OPTIONS"
-REL="0.3-beta (Zimwalt)"
 MISSING_FILE_1="mis-187/opt-mastr=0"
 MISSING_FILE_2="mis-187/opt-updt-apt=0"
 MISSING_FILE_3="mis-187/opt-uninx-pk=0"

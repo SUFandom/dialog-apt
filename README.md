@@ -16,19 +16,17 @@ Cool Font.
 ## APT CLI THAT CAN MAKE YOUR APT USE EASY!!
 Tired of Typing APT install? well this is the script for you
 
-## NEW THINGS ON 0.3-beta - (Zimwalt)!!
+## NEW THINGS ON 0.4-beta (Kepler)!!
 
-> FIXED ABOUT PAGE NOT APPEARING!!
+> VERSION ID OF THE SCRIPT DOSEN'T SHOW , FIXED
 
-> CHANGED ART TEXT TO FIGLET BACK. (PATCH NOTE UPDATE)
+> YOU CAN NOW UPDATE CACHES IN THIS SCRIPT
+(AND EVEN UPDATE SOME PACKAGES)
 
-> REMOVED LOOP AREA AT apt-menu.sh DUE TO MAYBE SOME 
-POSSIBILITY THAT THE ERROR MAY HAVE CAUSED IT 
+> FOR REAL!! FIXED THE ERROR WHEN GOING INTO OPTIONS
 
-> FIXED GOING OPTIONS SHOW ERRORS FROM DIALOG ITSELF
+> SLEEP FUNCTION VALUE NOW DECREASED IN SOME AREAS
 
-> REMOVED APT-EXIT.SH BECAUSE ITS THE SOURCE OF THE 
-LOOPING EXIT ISSUE
 
 Check the Releases for Revisions or Commits (Or git clone then read the patch there)
 
@@ -46,10 +44,10 @@ apt update && apt upgrade -y && apt install git -y && git clone http://github.co
 then run:
 
 ```
-chmod +x apt-cli-about.sh ; chmod +x apt-cli-help.sh ; chmod +x apt-cli-patch.sh ; chmod +x apt-install.sh ; chmod +x apt-menu.sh ; chmod +x apt-options.sh ; chmod +x main.sh ; chmod +x apt-search.sh ; chmod +x master-input.sh ; chmod +x master.sh ; chmod +x uninstall-package.sh ; chmod +x uninstall-sh.sh ; chmod +x update-cache.sh ; chmod +x autorem-apt.sh ; chmod +x uninstall-aptcli.sh
+chmod +x apt-cli-about.sh ; chmod +x apt-cli-help.sh ; chmod +x apt-cli-patch.sh ; chmod +x apt-install.sh ; chmod +x apt-menu.sh ; chmod +x apt-options.sh ; chmod +x main.sh ; chmod +x apt-search.sh ; chmod +x master-input.sh ; chmod +x master.sh ; chmod +x uninstall-package.sh ; chmod +x uninstall-sh.sh ; chmod +x update-cache.sh ; chmod +x autorem-apt.sh ; chmod +x uninstall-aptcli.sh ; command +x apt-upgrade.sh 
 ```
 
-BUT MAKE SURE YOU'RE AT THE REPO'S LOCATION OR IT WILL NOT WORK!!
+BUT MAKE SURE YOU'RE AT THE REPO'S LOCATION OR IT WILL NOT WORK!! 
 
 (Im working on an installer to make this easier. May appear Later in versions later)
 
@@ -66,6 +64,7 @@ then Sit down until the script is 100% Working, there will be some parts that wi
 
 
 Socials:
+
 Discord:
 ```
 zarya_moonwolf_7#8205

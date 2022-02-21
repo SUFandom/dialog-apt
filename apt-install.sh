@@ -2,12 +2,13 @@
 
 
 #GLOBAL VARIABLES
+REL="0.4-beta (Kepler) "
 BKTITLE="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE_HEADING="APT-CLI INSTALL"
 TIME=$SECONDS
 TITLE_STARTUP="APT-CLI"
 TITLE_HEADING_B="APT-CLI ABOUT"
-REL="0.3-beta (Zimwalt) "
+
 
 #Height and Width for Dialog
 HEIGHT=0

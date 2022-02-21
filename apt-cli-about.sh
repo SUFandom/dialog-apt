@@ -1,8 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/env sh
 
 #GLOBAL VARIABLE
+REL="0.4-beta (Kepler)"
 TITLE="APT-CLI ABOUT PAGE"
-REL="0.3-beta (Zimwalt)"
 BKT="APT-CLI by SUFandom (Dialog Version) $REL"
 
 

@@ -2,6 +2,7 @@
 
 
 #GLOBAL VARIABLES
+REL="0.4-beta(Kepler)"
 BKTITLE="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE_HEADING="APT-CLI MENU"
 TIME=$SECONDS
@@ -9,7 +10,7 @@ TITLE_STARTUP="APT-CLI"
 TITLE_HEADING_B="APT-CLI ABOUT"
 VS_BASH=command bash -c 'echo $BASH_VERSION'
 VS_ZSH=command zsh --version
-REL="0.3-beta(zimwalt)"
+
 
 
 #Height-Width Default Variable (GLOBAL VARIABLES)
@@ -49,7 +50,7 @@ echo "This is just Dialog Engine having seizures  "
 echo "Due to the 'for' function. sorry" 
 sleep 3
 
-for i in $(seq 0 12 100) ; do sleep 0.5 ; echo $i | dialog --backtitle "$BKTITLE" --gauge "Loading, Please Wait" 10 50 0 ; done
+for i in $(seq 0 20 100) ; do sleep 0.5 ; echo $i | dialog --backtitle "$BKTITLE" --gauge "Loading, Please Wait" 10 50 0 ; done
 
 #Scanning if you set Termux to Root
 #By checking if it can read /data because only SuperUser Privilege to check it.

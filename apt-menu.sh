@@ -2,12 +2,13 @@
 
 
 #GLOBAL VARIABLES
+REL="0.4-beta (Kepler)"
 BKTITLE="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE_HEADING="APT-CLI MENU"
 TIME=$SECONDS
 TITLE_STARTUP="APT-CLI"
 TITLE_HEADING_B="APT-CLI ABOUT"
-REL="0-3-beta (Zimwalt)"
+
 
 #ERROR Variable, ASSETS RELATED
 ROOT_DETECTED="uw-r#0"
@@ -40,7 +41,7 @@ then
      exit
 else 
      dialog --backtitle "$BKTITLE" --infobox "Loading" $HEIGHT $WIDTH
-     sleep 10
+     sleep 5
 fi
 
 #MENU
@@ -105,7 +106,7 @@ case $selection in
        ;;
      5) 
        clear ;
-       dialog --infobox "$BKTITLE"  --title "APT OPTIONS (EXPERIMENTAL)" --infobox "Loading Options" $HEIGHT $WIDTH ;
+       dialog --backtitle "$BKT"  --title "APT OPTIONS (EXPERIMENTAL)" --infobox "Loading Options" $HEIGHT $WIDTH ;
        sleep 5 ;
        command ./apt-options.sh
        ;;

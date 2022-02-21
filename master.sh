@@ -1,8 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 #GLOBAL PARAMS
+REL="0.4-beta (Kepler)"
 BKT="APT-CLI By SUFandom (Dialog Version) $REL"
-REL="0.3-beta (Zimwalt)"
 TITLE="MASTER MODE"
 WARNING="THIS AREA IS PROHIBITED TO BE USED BY INEXPERIENCE. GO AS YOU RISK"
 BKT_N="WARNING"
@@ -24,7 +24,7 @@ WIDTH=0
 
 #Main inpt
 exec 3>&1
-dialog  --backtitle "$BKT_N" --title "$TITLE"  --yes-label "I AGREE WITH THE RISK" --no-label "I will back out" --yesno "$WARNING, REMINDER THAT ALL PROGRAMS INCLUDING THIS SCRIPT HAS NO WARRANTY. PROCEED INSTEAD ON HELP FOR THE INSTRUCTIONS." $HEIGHT $WIDTH 
+dialog  --backtitle "$BKT_N" --title "$TITLE"  --yes-label "I AGREE THE RISK" --no-label "I will back out" --yesno "$WARNING, REMINDER THAT ALL PROGRAMS INCLUDING THIS SCRIPT HAS NO WARRANTY. PROCEED INSTEAD ON HELP FOR THE INSTRUCTIONS." $HEIGHT $WIDTH 
 #Exit Sniffers
 exit_status=$?
 exec 3>&-

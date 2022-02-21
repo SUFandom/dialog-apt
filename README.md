@@ -44,7 +44,7 @@ apt update && apt upgrade -y && apt install git -y && git clone http://github.co
 then run:
 
 ```
-chmod +x apt-cli-about.sh ; chmod +x apt-cli-help.sh ; chmod +x apt-cli-patch.sh ; chmod +x apt-install.sh ; chmod +x apt-menu.sh ; chmod +x apt-options.sh ; chmod +x main.sh ; chmod +x apt-search.sh ; chmod +x master-input.sh ; chmod +x master.sh ; chmod +x uninstall-package.sh ; chmod +x uninstall-sh.sh ; chmod +x update-cache.sh ; chmod +x autorem-apt.sh ; chmod +x uninstall-aptcli.sh ; command +x apt-upgrade.sh 
+chmod +x apt-cli-about.sh ; chmod +x apt-cli-help.sh ; chmod +x apt-cli-patch.sh ; chmod +x apt-install.sh ; chmod +x apt-menu.sh ; chmod +x apt-options.sh ; chmod +x main.sh ; chmod +x apt-search.sh ; chmod +x master-input.sh ; chmod +x master.sh ; chmod +x uninstall-package.sh ; chmod +x uninstall-sh.sh ; chmod +x update-cache.sh ; chmod +x autorem-apt.sh ; chmod +x uninstall-aptcli.sh ; chmod +x apt-upgrade.sh 
 ```
 
 BUT MAKE SURE YOU'RE AT THE REPO'S LOCATION OR IT WILL NOT WORK!! 

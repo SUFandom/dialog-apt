@@ -13,7 +13,7 @@ WIDTH=0
 
 #Global Vars
 TITLE="APT-CLI PATCH INFO"
-REL="0.4-beta (Kepler)"
+REL="0.5-beta (Luz)"
 BKT="APT-CLI by SUFandom (Dialog Version) $REL"
 
 

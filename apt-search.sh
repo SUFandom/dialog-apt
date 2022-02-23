@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 #GLOBAL VARIABLES
-REL="0.4-beta (Kepler)"
+REL="0.5-beta (Luz)"
 BKTITLE="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE_HEADING="APT-CLI MENU"
 TIME=$SECONDS

@@ -15,7 +15,7 @@ MISSING_FILE="mis-187/inf=0"
 
 #Global Vars
 TITLE="APT-CLI HELP PAGE"
-REL="0.4-beta (Kepler)"
+REL="0.5-beta (Luz)"
 BKT="APT-CLI by SUFandom (Dialog Version) $REL"
 
 

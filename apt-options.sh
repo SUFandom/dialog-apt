@@ -2,7 +2,7 @@
 
 
 #GLOBAL VARIABLES
-REL="0.4-beta (Kepler)"
+REL="0.5-beta (Luz)"
 BKT="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE="OPTIONS"
 MISSING_FILE_1="mis-187/opt-mastr=0"

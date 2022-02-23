@@ -2,7 +2,7 @@
 
 
 #GLOBAL VARIABLES
-REL="0.4-beta (Kepler)"
+REL="0.5-beta (Luz)"
 BKTITLE="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE_HEADING="APT-CLI MENU"
 TIME=$SECONDS
@@ -41,7 +41,7 @@ then
      exit
 else 
      dialog --backtitle "$BKTITLE" --infobox "Loading" $HEIGHT $WIDTH
-     sleep 5
+     sleep 2
 fi
 
 #MENU
@@ -66,14 +66,14 @@ case $exit_status in
      $DIALOG_CANCEL) 
          clear
          dialog --backtitle "$BKTITLE" --title "$TITLE_STARTUP" --infobox "Ending Process $PID with $?.. Together with Session" $HEIGHT $WIDTH
-         sleep 5
+         sleep 3
          kill -9 $PID
          exit 1
       ;;
      $DIALOG_ESC)
          clear
          dialog --backtitle "$BKTITLE" --title "$TITLE_STARTUP"  --infobox "PRESSED ESC KEY, Proceeding to Stop the process $PID with Error 1" 10 30
-         sleep 5 
+         sleep 3 
          exit 
          exit
          exit
@@ -89,31 +89,31 @@ case $selection in
      2)
     clear ;
        dialog --backtitle "$BKTITLE" --title "APT-CLI" --infobox "Loading APT Package Downloader and Installer" $HEIGHT $WIDTH ;
-       sleep 5 ;
+       sleep 3 ;
        command ./apt-install.sh
        ;;
      3)
        clear ; 
        dialog --backtitle "$BKTITLE" --title "APT-CLI ABOUT" --infobox "Loading About Page." $HEIGHT $WIDTH ;
-       sleep 5 ;
+       sleep 3 ;
        command ./apt-cli-about.sh 
        ;;
      4)
        clear ;
        dialog --backtitle "$BKTITLE" --title "APT-CLI HELP" --infobox "Loading Help" $HEIGHT $WIDTH ;
-       sleep 5 ;
+       sleep 3 ;
        command ./apt-cli-help.sh
        ;;
      5) 
        clear ;
        dialog --backtitle "$BKT"  --title "APT OPTIONS (EXPERIMENTAL)" --infobox "Loading Options" $HEIGHT $WIDTH ;
-       sleep 5 ;
+       sleep 3 ;
        command ./apt-options.sh
        ;;
      6)
         clear ;
         dialog --backtitle "$BKTITLE" --title "APT-CLI Patch" --infobox "Loading Patch Release: $REL " $HEIGHT $WIDTH ;
-        sleep 5 ;
+        sleep 3 ;
         command ./apt-cli-patch.sh 
         ;;
      7) 

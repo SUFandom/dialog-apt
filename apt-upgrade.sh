@@ -9,7 +9,7 @@
 : ${DIALOG_ESC=255}
 
 #GLOBAL VARIABLES
-REL="0.4-beta (Kepler)"
+REL="0.5-beta (Luz)"
 BKT="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE="OPTIONS"
 

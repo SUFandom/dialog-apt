@@ -12,21 +12,22 @@
 
 Cool Font.
 
+ITS THE END OF BETA 5. MAJOR PUBLIC RELEASE SOON!! 🎉🎉
+
+ALTHOUGH SOME FEATURES MAY BE REMOVED BECAUSE ITS OBSOLETE BUT HEY ITS FASTER!
 
 ## APT CLI THAT CAN MAKE YOUR APT USE EASY!!
 Tired of Typing APT install? well this is the script for you
 
-## NEW THINGS ON 0.4-beta (Kepler)!!
+## NEW THINGS ON 0.5-beta (Luz)!!
 
-> VERSION ID OF THE SCRIPT DOSEN'T SHOW , FIXED
+- FINAL VERSION OF THE BETA
 
-> YOU CAN NOW UPDATE CACHES IN THIS SCRIPT
-(AND EVEN UPDATE SOME PACKAGES)
+- MOST FEATURES WILL BE REMOVED SOON
 
-> FOR REAL!! FIXED THE ERROR WHEN GOING INTO OPTIONS
+- MINOR OPTIMIZATION TWEAKS
 
-> SLEEP FUNCTION VALUE NOW DECREASED IN SOME AREAS
-
+- SIMPLIFIED THE ``CHMOD`` PROCESS
 
 Check the Releases for Revisions or Commits (Or git clone then read the patch there)
 
@@ -44,9 +45,8 @@ apt update && apt upgrade -y && apt install git -y && git clone http://github.co
 then run:
 
 ```
-chmod +x apt-cli-about.sh ; chmod +x apt-cli-help.sh ; chmod +x apt-cli-patch.sh ; chmod +x apt-install.sh ; chmod +x apt-menu.sh ; chmod +x apt-options.sh ; chmod +x main.sh ; chmod +x apt-search.sh ; chmod +x master-input.sh ; chmod +x master.sh ; chmod +x uninstall-package.sh ; chmod +x uninstall-sh.sh ; chmod +x update-cache.sh ; chmod +x autorem-apt.sh ; chmod +x uninstall-aptcli.sh ; chmod +x apt-upgrade.sh 
+chmod +x *.sh
 ```
-
 BUT MAKE SURE YOU'RE AT THE REPO'S LOCATION OR IT WILL NOT WORK!! 
 
 (Im working on an installer to make this easier. May appear Later in versions later)

@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 #GLOBAL PARAMS
-REL="0.4-beta (Kepler)"
+REL="0.5-beta (Luz)"
 BKT="APT-CLI By SUFandom (Dialog Version) $REL"
 TITLE="MASTER MODE"
 WARNING="THIS AREA IS PROHIBITED TO BE USED BY INEXPERIENCE. GO AS YOU RISK"

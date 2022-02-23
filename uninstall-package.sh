@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash 
 
 #Global Params
-REL="0.4-beta (Kepler)"
+REL="0.5-beta (Luz)"
 BKT="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE="Remove Packages"
 

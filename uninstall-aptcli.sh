@@ -5,7 +5,7 @@ HEIGHT=0
 WIDTH=0
 
 #GLOBAL
-REL="0.4-beta (Kepler)"
+REL="0.5-beta (Luz)"
 BACKTITLE="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE="UNINSTALL"
 

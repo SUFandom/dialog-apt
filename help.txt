@@ -1,5 +1,5 @@
 APT-CLI Help!
-Version 0.4-beta (Kepler)
+Version 0.5-beta (Luz)
 Public Beta Release Document
 Author - Version Helped : 
        SUFandom -GitHub (Owner) - 0.1 - *

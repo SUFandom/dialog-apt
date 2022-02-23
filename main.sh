@@ -2,7 +2,7 @@
 
 
 #GLOBAL VARIABLES
-REL="0.4-beta(Kepler)"
+REL="0.5-beta (Luz)"
 BKTITLE="APT-CLI by SUFandom (Dialog Version) $REL"
 TITLE_HEADING="APT-CLI MENU"
 TIME=$SECONDS
@@ -59,7 +59,7 @@ if ( find /data )
 then dialog  --backtitle "$BKTITLE"   --infobox "You are in Super User, $USER, Disengage Root and proceed, Script Broadcasted $?, means Termux is in Root mode " 10 30
      sleep 3
      dialog --backtitle "$BKTITLE" --infobox "Killing Termux Terminal Session $PID" 8 30
-      sleep 3
+      sleep 1
      dialog --backtitle "$BKTITLE" --infobox "Remove Root Privileges, executing Exit code $?" 13 40
      sleep 5
      exit
@@ -118,7 +118,7 @@ echo "hibernating 'seconds' temporarily......"
 sleep 3
 clear
 printf '%s\n' "Warning, There will be a Prompt by asking you to Enter your Terminal Environment, you can choose Option 3 if you Dont Know." | fold -s
-sleep 5
+sleep 3
 exec 3>&1 
 console=$( dialog \
              --backtitle "Identify your CL" \
@@ -136,7 +136,7 @@ exec 3>&-
 case $exit_status in 
      $DIALOG_CANCEL)
      dialog --backtitle "Cancel operend" --infobox "Cancelling Process, warning, any issues may appear in later versions" $HEIGHT $WIDTH  ;
-     sleep 5 
+     sleep 2
      ;; 
 esac
 case $console in

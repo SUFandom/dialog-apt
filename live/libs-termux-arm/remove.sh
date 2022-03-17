@@ -1,7 +1,7 @@
 #!/bin/env bash
 
-REL="1.0.0 (Kronos)"
-BUILD="1"
+REL="1.0.1 (Kronos)"
+BUILD="2"
 STUS="LIVE"
 BT="Dialog APT LIVE SCRIPT - $REL"
 TITLE="DIALOG-APT $STUS SCRIPT INSTALLER"

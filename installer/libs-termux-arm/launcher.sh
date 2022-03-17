@@ -7,7 +7,7 @@ if (mkdir $HOME/.apt-dialog)
 then 
   echo "Dir Created."
 else 
-  echo "Directory may have been existed or triggered an Error. please check at your $HOME directory and type ls -a and make sure, .apt-dialog is present."
+  echo "Directory may have been existed or triggered an Error. please check at your $HOME directory and type ls -a and make sure, $(tput setaf 1)'.apt-dialog'$(tput sgr0) is present."
 fi
 if (find $HOME/apt-dialog/log)
 then
@@ -16,7 +16,7 @@ else
   touch $HOME/.apt-dialog/log
   clear
 fi
-REL="1.0.0 (Kronos)"
+REL="1.0.1 (Kronos)"
 BT="Dialog APT Installer SCRIPT - $REL"
 TITLE="DIALOG-APT INSTALLER SCRIPT"
 

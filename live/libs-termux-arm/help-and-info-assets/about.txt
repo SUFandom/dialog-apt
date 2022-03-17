@@ -7,7 +7,7 @@
  / _ \|  _/| |  | | | |_| | |) | _|
 /_/ \_\_| |___| |_|  \___/|___/|___|
 
-VERSION 1.0.0 BUILD 1
+VERSION 1.0.1 BUILD 1
 CODENAME KRONOS
 GPL 3.0
 FOR TERMUX 0.118 AND ABOVE

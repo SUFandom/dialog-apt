@@ -1,6 +1,6 @@
 #!/bin/env bash
 
-REL="1.0.0 (Kronos)"
+REL="1.0.1 (Kronos)"
 BT="Dialog APT - $REL"
 TITLE="DIALOG-APT"
 
@@ -30,7 +30,7 @@ else
 echo "Missing Live.sh, Error: $MISSING_FILE_LIVE"
 fi
 sleep 1
-if ( find installer/libs-termux-arm/install.sh )
+if ( find installer/libs-termux-arm/launcher.sh )
 then
 echo "$(tput setaf 2)Found installer script.$(tput sgr0)"
 else
@@ -39,22 +39,15 @@ fi
 sleep 1
 echo "If the script broadcast an error because some certain files are missing, Please report."
 sleep 5
-
 echo "Running Asset installs"
 sleep 2
-if ( ping google.com 1 )
-then
-clear
-apt update && apt upgrade -y
-else
-clear
-echo "Internet Access needed. Failed Installing assets"
-fi
+apt-get update && apt-get upgrade -y
 sleep 2
 clear
 echo "Installing Important Asset(s)"
 sleep 2
 apt install openssl -y
+apt install dialog -y
 echo "Done"
 sleep 1
 clear

@@ -9,6 +9,8 @@ Its a Miracle!
 - Fixed Error Popping out when starting ./main.sh
 - Nothing Changed than that only...
 
+### Copy This Code to start
+
 ```
 git clone https://github.com/SUFandom/dialog-apt && cd dialog-apt && chmod +x chmod-us.sh && sh chmod-us.sh && sh main.sh
 ```

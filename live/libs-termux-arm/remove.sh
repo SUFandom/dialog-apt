@@ -1,7 +1,7 @@
 #!/bin/env bash
 
-REL="1.0.1 (Kronos)"
-BUILD="2"
+REL="1.0.2 (Kronos)"
+BUILD="3"
 STUS="LIVE"
 BT="Dialog APT LIVE SCRIPT - $REL"
 TITLE="DIALOG-APT $STUS SCRIPT INSTALLER"
@@ -39,7 +39,7 @@ exit_value=$?
 exec 3>&-
 case $exit_value in
 $DIALOG_OK)
-{apt-get remove $var -y ; } | dialog --backtitle "$BT" --title "Progress" --programbox 30 50
+apt-get remove $var -y  | dialog --backtitle "$BT" --title "Progress" --programbox 30 50
 command ./corelib.sh
 ;;
 $DIALOG_CANCEL)

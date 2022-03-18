@@ -16,7 +16,15 @@ else
   touch $HOME/.apt-dialog/log
   clear
 fi
-REL="1.0.1 (Kronos)"
+
+echo "If any Chance that the installation failed because you did something wrong or the script does, use the command 'cp' and send it to usr/bin to make it work. If not, please tell me at Github about the issue with Detail, your device specs and your Termux Version. "
+echo "The assets however, you should copy them to $HOME/.apt-dialog to work."
+sleep 10
+clear
+echo "Termux Home Directory, $HOME"
+echo "Please copy & remove the 'home' part and replace it with usr/bin to successfully install"
+sleep 10
+REL="1.0.2 (Kronos)"
 BT="Dialog APT Installer SCRIPT - $REL"
 TITLE="DIALOG-APT INSTALLER SCRIPT"
 
@@ -126,13 +134,12 @@ sleep 4
 exit 1
 fi
 exec 3>&1
-input=$( \
-  dialog --backtitle "$BT" \
+input=$( dialog --backtitle "$BT" \
   --title "$TITLE" \
   --clear \
   --yes-label "Proceed" \
   --no-label "Abort" \
-  --inputbox "Hey there, Since Android Devices are Different, Data Directory Structures sure are different either. So i want you to input where your termux's core data library to Copy the file. Its better if you have termux-ohmyzsh installed cuz you can easily know where it is. Now you just need to type, where's your 'bin' located. And the installer will continue Aborting it stops the installation as part of Safety Reasons. Dont forget to put '/' first or it will not work. like: /data/data/com.termux/files/usr/bin . " \
+  --inputbox "Hey there, Since Android Devices are Different, Data Directory Structures sure are different either. So i want you to input where your termux's core data library to Copy the file. Its better if you have termux-ohmyzsh installed cuz you can easily know where it is. Now you just need to type, where's your 'bin' located. And the installer will continue Aborting it stops the installation as part of Safety Reasons. Dont forget to put '/' first or it will not work. like: /data/data/com.termux/files/usr/bin . Also Mistakenly Inputting Something will do Harm on your Termux App in a Bad way (Possibly). But if you copied the Warning Earlier, then paste it her and replace it from /home to usr/bin. " \
   $HEIGHT $WIDTH 2>&1 1>&3 \
   )
 exit_sniffer=$?
@@ -157,6 +164,10 @@ apt-dialog
  clear
  echo "$(tput setaf 1) Aborting ..$(tput sgr0)"
  sleep 3
+ echo "Cleaning Leftovers"
+ sleep 3
+ rm -rf $HOME/.apt-dialog
+ echo "Done"
  tput cnorm
  exit 1
  ;;

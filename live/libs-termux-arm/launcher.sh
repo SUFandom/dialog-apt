@@ -2,7 +2,7 @@
 
 cd live/libs-termux-arm
 
-REL="1.0.1 (Kronos)"
+REL="1.0.2 (Kronos)"
 BT="Dialog APT LIVE SCRIPT - $REL"
 TITLE="DIALOG-APT LIVE SCRIPT"
 
@@ -109,7 +109,8 @@ echo "Missing File, >'assets/update.sh'<, Error: $MISSING_FILE_OTHERS, Ending Pr
 sleep 4
 exit 1
 fi
-echo 'Finalizing\n'
+clear
+echo 'Finalizing'
 sleep 1
 printf "Core Script Ended in: $SECONDS with Code Exit Number $?" >> .debug-launcher-opt
 sleep 5

@@ -1,8 +1,8 @@
 #!/bin/env bash
-REL="1.0.1 (Kronos)"
+REL="1.0.2 (Kronos)"
 BT="Dialog APT Wizard Installer - $REL - Beta"
 TITLE="DIALOG-APT WIZARD"
-BUILD="2"
+BUILD="3"
 MISSING_FILE_INS="mis-wiz=1"
 MISSING_FILE_LIVE="mis-lve=1"
 

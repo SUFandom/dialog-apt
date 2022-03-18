@@ -1,6 +1,6 @@
 #!/bin/sh
 
-REL="1.0.1 (Kronos)"
+REL="1.0.2 (Kronos)"
 BT="Dialog APT LIVE SCRIPT - $REL"
 TITLE="DIALOG-APT LIVE SCRIPT"
 

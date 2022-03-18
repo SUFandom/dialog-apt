@@ -1,7 +1,8 @@
 #!/bin/env bash
 
-REL="1.0.1 (Kronos)"
+REL="1.0.2 (Kronos)"
 BT="Dialog APT - $REL"
+BUILD="3"
 TITLE="DIALOG-APT"
 
 MISSING_FILE_INS="mis-wiz=1"
